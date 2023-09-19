@@ -1,0 +1,18 @@
+## IDF Component Manager Manifest File
+dependencies:
+  ## Required IDF version
+  idf:
+    version: ">=5.0"
+
+  ## Required ESP-IDF components
+  esp-idf-lib:          # Display & Touch library (similar to TFT_eSPI & Adafruit_GFX)
+    git: git@github.com:UncleRus/esp-idf-lib.git
+    
+  ## Seperate components for display & touch (not required if using LovyanGFX)
+  # atanisoft/esp_lcd_ili9488: "^1.0.9"
+  # atanisoft/esp_lcd_touch_xpt2046: "^1.0.1"
+  # espressif/esp_lcd_touch: "^1.0.4"
+
+  ## Not using with LVGL v8
+  # lvgl_esp32_drivers: # LVGL graphics drivers & display/touch drivers 
+  #   git: https://github.com/lvgl/lvgl_esp32_drivers.git
